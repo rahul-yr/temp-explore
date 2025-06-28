@@ -47,6 +47,8 @@ services:
       - OPAL_SERVER_URL=http://opal_server:7002
       - OPAL_LOG_FORMAT_INCLUDE_PID=true
       - OPAL_INLINE_OPA_LOG_FORMAT=http
+      # directories to listent to -> separated by : 
+      - OPAL_POLICY_SUBSCRIPTION_DIRS=opa-test/opa/appname/policies
 
       # Uncomment the following lines to enable storing & loading OPA data from a backup file:
       # - OPAL_OFFLINE_MODE_ENABLED=true

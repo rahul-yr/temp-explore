@@ -1,0 +1,62 @@
+{
+    "users": {
+        "rahul": {
+            "email": "rahul@gmail.com",
+            "roles": [
+                "superadmin"
+            ]
+        },
+        "giri": {
+            "email": "giri@gmail.com",
+            "roles": [
+                "support"
+            ]
+        },
+        "harsha": {
+            "email": "harsha@gmail.com",
+            "roles": [
+                "user"
+            ]
+        }
+    },
+    "permissions": {
+        "superadmin": {
+            "meetup": {
+                "create": true,
+                "read": true,
+                "update": true,
+                "delete": true,
+                "read_all": true
+            },
+            "blog": {
+                "create": true,
+                "read": true,
+                "update": true,
+                "delete": true,
+                "read_all": true
+            }
+        },
+        "support": {
+            "meetup": {
+                "read": true,
+                "update": true,
+                "read_all": true
+            },
+            "blog": {
+                "read": true,
+                "update": true,
+                "read_all": true
+            }
+        },
+        "user": {
+            "meetup": {
+                "read": true,
+                "read_all": true
+            },
+            "blog": {
+                "read": true,
+                "read_all": true
+            }
+        }
+    }
+}

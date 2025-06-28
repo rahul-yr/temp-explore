@@ -1,0 +1,62 @@
+{
+    "users": {
+        "reddy": {
+            "email": "reddy@gmail.com",
+            "roles": [
+                "superadmin"
+            ]
+        },
+        "mom": {
+            "email": "mom@gmail.com",
+            "roles": [
+                "support"
+            ]
+        },
+        "dad": {
+            "email": "dad@gmail.com",
+            "roles": [
+                "user"
+            ]
+        }
+    },
+    "permissions": {
+        "superadmin": {
+            "meetup": {
+                "create": true,
+                "read": true,
+                "update": true,
+                "delete": true,
+                "read_all": true
+            },
+            "blog": {
+                "create": true,
+                "read": true,
+                "update": true,
+                "delete": true,
+                "read_all": true
+            }
+        },
+        "support": {
+            "meetup": {
+                "read": true,
+                "update": true,
+                "read_all": true
+            },
+            "blog": {
+                "read": true,
+                "update": true,
+                "read_all": true
+            }
+        },
+        "user": {
+            "meetup": {
+                "read": true,
+                "read_all": true
+            },
+            "blog": {
+                "read": true,
+                "read_all": true
+            }
+        }
+    }
+}
